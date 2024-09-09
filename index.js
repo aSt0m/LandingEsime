@@ -14,13 +14,22 @@ app.post('/', express.json(), (req,res)=>{
     });
 
     function demo(agent){
+       
         agent.add("Sending response from Webhook server")
-        agent.add("Sending other request of server!!!!!!")
+       
+    }
+    function saludo(agent){
+        agent.add("Hola mundo desde Webhook");
+        agent.add("alternate answer from server Webhook");
+        agent.add(" Test 1");
+        agent.add(" Test 2")
     }
 
     var intentMap = new Map();
+   
     
-   intentMap.set('WebhookDemo',demo)
+    intentMap.set('WebhookDemo',demo)
+   
 
     agent.handleRequest(intentMap);
 

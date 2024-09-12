@@ -82,4 +82,9 @@ html {
     justify-content:space-around;
 
 }
+.header_left, .header_right{
+    background: #085d8a;
+    height:100%;
+    width:100%;
+}
 

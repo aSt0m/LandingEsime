@@ -15,20 +15,39 @@ app.post('/', express.json(), (req,res)=>{
 
     function demo(agent){
        
-        agent.add("Sending response from Webhook server")
+        agent.add(`Sending response from Webhook server New V:1111`);
+        
        
     }
-    function saludo(agent){
-        agent.add("Hola mundo desde Webhook");
-        agent.add("alternate answer from server Webhook");
-        agent.add(" Test 1");
-        agent.add(" Test 2")
+   
+
+    function  customPayloadDemo(agent){
+        var payloadData = {
+  "richContent": [
+    [
+      {
+        "type": "info",
+        "title": "Info item title",
+        "subtitle": "Info item subtitle",
+        "image": {
+          "src": {
+            "rawUrl": "https://example.com/images/logo.png"
+          }
+        },
+        "actionLink": "https://example.com"
+      }
+    ]
+  ]
+}
+        agent.add(new dfff.Payload(agent.UNSPECIFIED, payloadData, {sendAsMessage: true, rawPayload: true}))
     }
+    
 
     var intentMap = new Map();
    
     
     intentMap.set('WebhookDemo',demo)
+    intentMap.set("customPayloadDemo",customPayloadDemo)
    
 
     agent.handleRequest(intentMap);

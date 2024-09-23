@@ -93,10 +93,10 @@ html {
 
 
 df-messenger {
-  --df-messenger-bot-message: #878fac;
-  --df-messenger-button-titlebar-color: #fafafa;
+  --df-messenger-bot-message: #2d49ad;
+  --df-messenger-button-titlebar-color: #938a8a;
   --df-messenger-chat-background-color: #00853E;
   --df-messenger-font-color: white;
-  --df-messenger-send-icon: #800442;
+  --df-messenger-send-icon: #00853E;
   --df-messenger-user-message: #9BA2A9;
  }

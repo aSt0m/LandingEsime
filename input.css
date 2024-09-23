@@ -55,6 +55,7 @@ html {
     display:flex;
     align-items: center;
     justify-content:center;
+    
 
 }
 .nav{
@@ -62,7 +63,7 @@ html {
     width:100%;
     height:100%;
     justify-content: space-around;
-    color:#55002A;
+    background-color:#55002A
     
 
 }
@@ -73,22 +74,29 @@ html {
     justify-content:space-between;
     text-decoration: none;
     list-style: none;
-    color:#ffffff;
-    
+    color:#ffffff
+}
+.nav>ul>li{
+  color:#ffffff;
+
 }
 
 .header_center{
   height:92vh;
   width: 100vw;
-
+  display: flex;
+  justify-content:center;
+  align-items:center;
   background-color: #55002A;
 }
 
+
+
 df-messenger {
   --df-messenger-bot-message: #878fac;
-  --df-messenger-button-titlebar-color: #9BA2A9;
-  --df-messenger-chat-background-color: #fafafa;
+  --df-messenger-button-titlebar-color: #fafafa;
+  --df-messenger-chat-background-color: #00853E;
   --df-messenger-font-color: white;
   --df-messenger-send-icon: #800442;
-  --df-messenger-user-message: #00853E;
+  --df-messenger-user-message: #9BA2A9;
  }

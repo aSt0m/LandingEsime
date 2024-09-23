@@ -60,6 +60,7 @@ html {
 .nav{
     display: flex;
     width:100%;
+    height:100%;
     justify-content: space-around;
     color:#878e95;
     
@@ -74,17 +75,19 @@ html {
     list-style: none;
     
 }
-.header_main{
-    height:90vh;
-    width:100vw;
-    display:flex;
-    align-items:center;
-    justify-content:space-around;
 
-}
-.header_left, .header_right{
-    background: #085d8a;
-    height:100%;
-    width:100%;
+.header_center{
+  height:92vh;
+  width: 100vw;
+
+  background-color: #55002A;
 }
 
+df-messenger {
+  --df-messenger-bot-message: #878fac;
+  --df-messenger-button-titlebar-color: #9BA2A9;
+  --df-messenger-chat-background-color: #fafafa;
+  --df-messenger-font-color: white;
+  --df-messenger-send-icon: #800442;
+  --df-messenger-user-message: #00853E;
+ }

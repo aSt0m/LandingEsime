@@ -15,9 +15,12 @@ app.post('/', express.json(), (req,res)=>{
 
     function demo(agent){
        
-        agent.add(`Sending response from Webhook server New V:1111`);
+        agent.add(`Sending response from Webhook server New `);
         
        
+    }
+    function answerFunction(agent){
+      agent.add("Soy la funcion answer")
     }
    
 
@@ -48,6 +51,7 @@ app.post('/', express.json(), (req,res)=>{
     
     intentMap.set('WebhookDemo',demo)
     intentMap.set("customPayloadDemo",customPayloadDemo)
+    intentMap.set("answer",answerFunction)
    
 
     agent.handleRequest(intentMap);

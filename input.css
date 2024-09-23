@@ -93,9 +93,9 @@ html {
 
 
 df-messenger {
-  --df-messenger-bot-message: #ffffff;
-  --df-messenger-button-titlebar-color: linear-gradient(#e66465,%20#9198e5);
-  --df-messenger-chat-background-color: #00853E;
+  --df-messenger-bot-message: #55002a;
+  --df-messenger-button-titlebar-color: #00853E;
+  --df-messenger-chat-background-color: #ffffff;
   --df-messenger-font-color: white;
   --df-messenger-send-icon: #00853E;
   --df-messenger-user-message: #9BA2A9;

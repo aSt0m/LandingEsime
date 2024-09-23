@@ -91,12 +91,20 @@ html {
 }
 
 
-
-df-messenger {
-  --df-messenger-bot-message: #55002a;
-  --df-messenger-button-titlebar-color: #ffffff;
-  --df-messenger-chat-background-color: #ffffff;
-  --df-messenger-font-color: white;
-  --df-messenger-send-icon: #00853E;
+/*
+  --df-messenger-bot-message: color de burbuja de respuesta de bot
+  --df-messenger-button-titlebar-color: Barra de titulo e icono cerrado  
+  --df-messenger-chat-background-color: fondo de ventana de mensajes
+  --df-messenger-font-color: color de fuente 
+  --df-messenger-send-icon: color de icono de envio (flecha que aparece adelante del mensaje escrito)
   --df-messenger-user-message: #9BA2A9;
+
+*/
+df-messenger {
+  --df-messenger-bot-message: #55002a; 
+  --df-messenger-button-titlebar-color: #151515;
+  --df-messenger-chat-background-color: #11582a;
+  --df-messenger-font-color: #ffffff;
+  --df-messenger-send-icon: #00853E;
+  --df-messenger-user-message: #3d4247;
  }

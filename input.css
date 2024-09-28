@@ -111,11 +111,11 @@ df-messenger {
  }
   body{
   height:100vh;
-  background-color: rgb(232, 232, 232);
+  background-color: rgb(255, 255, 255);
 }  
  #particles-js {
 	height: 100vh; 
-    width: 100%;
+  width: 100%;
   position: fixed;
   z-index:-1;   
     /* outline: 1px solid red; */

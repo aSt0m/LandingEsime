@@ -12,11 +12,11 @@ html {
     --color-secondary: #24789e;
     --color-: #085d8a;
   }
-  body {
-    line-height: 1.5;
+  /* body {
+   line-height: 1.5;
     font-family: "Open Sans", sans-serif;
     color: #25292a;
-  }
+  } */
   img {
     max-width: 100%;
   }
@@ -40,9 +40,9 @@ html {
     font-size: 1rem;
     }
 
-.header{
+/* .header{
   
-    height: 100vh;
+    height: 50vh;
     width: 100vw;
     display: flex;
     flex-direction:column;
@@ -50,7 +50,7 @@ html {
     justify-content:space-around;
      
 
-}   
+}    */
 .logo{
     display:flex;
     align-items: center;
@@ -81,14 +81,15 @@ html {
 
 }
 
-.header_center{
+/* .header_center{
   height:92vh;
   width: 100vw;
   display: flex;
   justify-content:center;
   align-items:center;
-  background-color: #55002A;
-}
+
+} */
+
 
 
 /*
@@ -102,9 +103,20 @@ html {
 */
 df-messenger {
   --df-messenger-bot-message: #55002a; 
-  --df-messenger-button-titlebar-color: #151515;
+  --df-messenger-button-titlebar-color: #4c4c4d;
   --df-messenger-chat-background-color: #11582a;
   --df-messenger-font-color: #ffffff;
   --df-messenger-send-icon: #00853E;
-  --df-messenger-user-message: #3d4247;
+  --df-messenger-user-message: #2b2d30;
  }
+  body{
+  height:100vh;
+  background-color: rgb(232, 232, 232);
+}  
+ #particles-js {
+	height: 100vh; 
+    width: 100%;
+  position: fixed;
+  z-index:-1;   
+    /* outline: 1px solid red; */
+} 

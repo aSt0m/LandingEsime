@@ -113,3 +113,26 @@
       }
       
 );
+
+
+
+
+
+
+// Eventos Javascript
+// .........................................................................................
+window.addEventListener('dfMessengerLoaded',function(event){
+  console.log("chatbot cargado e inicializado" + event)
+
+const dfMessenger = document.querySelector('df-messenger');
+dfMessenger.renderCustomText('Custom text');
+
+dfMessenger = document.querySelector('df-messenger');
+dfMessenger.showMinChat();
+
+  dfMessenger.addEventListener('df-list-element-clicked', function(event){
+    console.log("df-list-element-clicked" + event)
+  })
+  
+
+})

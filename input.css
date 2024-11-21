@@ -12,6 +12,7 @@ html {
     --color-secondary: #24789e;
     --color-: #085d8a;
   }
+ 
   /* body {
    line-height: 1.5;
     font-family: "Open Sans", sans-serif;
@@ -99,20 +100,40 @@ html {
   --df-messenger-font-color: color de fuente 
   --df-messenger-send-icon: color de icono de envio (flecha que aparece adelante del mensaje escrito)
   --df-messenger-user-message: #9BA2A9;
+  SS:
+Variable de CSS 	Propiedad afectada
+*df-messenger-bot-message 	                    El color de fondo de la burbuja para los mensajes del agente 
+*df-messenger-button-titlebar-color 	          El color del botón flotante y de la barra de título del cuadro de chat
+*df-messenger-chat-background-color 	          El color de fondo del cuadro de chat
+*df-messenger-font-color 	                      El color de fuente para los mensajes
+*df-messenger-send-icon 	                      El color del ícono de envío en la casilla de entrada de texto
+*df-messenger-user-message 	                    El color de fondo de la burbuja para los mensajes del usuario
+*df-messenger-input-box-color 	                El color de fondo de la casilla de entrada de texto
+*df-messenger-button-titlebar-font-color 	      El color de fuente del título en la barra de título
+*df-messenger-input-font-color 	                El color de fuente para la casilla de entrada de texto
+*df-messenger-input-placeholder-font-color 	    El color de fuente para el texto del marcador de posición en la casilla de entrada de texto
+*df-messenger-minimized-chat-close-icon-color 	El color del ícono de cierre en la vista del chat cerrado
 
 */
 df-messenger {
-  --df-messenger-bot-message: #461d32; 
-  --df-messenger-button-titlebar-color: #4c4c4d;
-  --df-messenger-chat-background-color: #40694e;
-  --df-messenger-font-color: #ffffff;
-  --df-messenger-send-icon: #387956;
-  --df-messenger-user-message: #2b2d30;
+  --df-messenger-bot-message: #581a3a;                          /*El color de fondo de la burbuja para los mensajes del agente */
+  --df-messenger-button-titlebar-color: #b3b2b2;                /*El color del botón flotante y de la barra de título del cuadro de chat*/
+  --df-messenger-chat-background-color: #40694e;                /*El color de fondo del cuadro de chat*/
+  --df-messenger-font-color: #ffffff;                           /*El color de fuente para los mensajes*/
+  --df-messenger-send-icon: #387956;                            /*El color del ícono de envío en la casilla de entrada de texto*/
+  --df-messenger-user-message: #303842;                         /*El color de fondo de la burbuja para los mensajes del usuario*/
+  --df-messenger-input-box-color: rgb(173, 218, 255);           /*El color de fondo de la casilla de entrada de texto*/
+  --df-messenger-button-titlebar-font-color: #ffffff;           /*El color de fuente del título en la barra de título*/
+  --df-messenger-input-font-color: #ee0808;                     /*El color de fuente para la casilla de entrada de texto*/
+  --df-messenger-input-placeholder-font-color: #090530;         /*El color de fuente para el texto del marcador de posición en la casilla de entrada de texto*/
+  --df-messenger-minimized-chat-close-icon-color: #e66b19;      /*El color del ícono de cierre en la vista del chat cerrado*/
+
  }
   body{
   height:100vh;
   background-color: rgb(255, 255, 255);
 }  
+
  #particles-js {
 	height: 100vh; 
   width: 100%;

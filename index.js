@@ -1,4 +1,5 @@
 const express = require("express");
+import { dfMessenger } from "./js/app/";
 const app = express();
 const dfff = require('dialogflow-fulfillment');
 const {Card, Suggestion} = require('dialogflow-fulfillment');
@@ -18,8 +19,14 @@ app.post('/', express.json(), (req,res)=>{
 
 
     function welcome(agent) {
-      agent.add(`Hola soy Esmeralda!`);
-      agent.add('Puedo hacer por ti varias cosas, entre ellas...')
+      agent.add(`Hola soy Esmeralda!!`);
+      agent.add('Puedes preguntarme por alguna categoria de la lista o dar click en alguna que necesites')
+      getMixed(agent)
+      setTimeout(() => {
+        console.log("SetTimeout()")
+        console.log(dfMessenger)
+        
+      }, 3000);
     }
    
     function fallback(agent) {
@@ -72,11 +79,11 @@ function languageHandler(agent) {
   const language = agent.parameters.language;
   const programmingLanguage = agent.parameters['language-programming'];
   if (language) {
-      agent.add(`From fulfillment: Wow! I didn't know you knew ${language}`);
+      agent.add(`From fulfillment: Wow! I didn't know you knew (Wow! No sabia que sabias) ${language}`);
   } else if (programmingLanguage) {
-      agent.add(`From fulfillment: ${programmingLanguage} is cool`);
+      agent.add(`Desde fulfillment: ${programmingLanguage} es cool`);
   } else {
-      agent.add(`From fulfillment: What language do you know?`);
+      agent.add(`Desde fulfillment: ¿Qué lenguaje conoces??`);
   }
 }
 
@@ -101,7 +108,7 @@ function languageHandler(agent) {
 
 
   function  getButton(agent){ 
-    agent.add('Hola desde intent welcome')
+
     var payloadDataButton ={
       "richContent": [
         [
@@ -221,16 +228,16 @@ function  getMixed(agent){
   var payloadDataMixed ={
     "richContent": [
       [
-        {
-          "type": "image",
+        // {
+        //   "type": "image",
           
-          "rawUrl": "https://www.inabaweb.com/wp-content/uploads/2023/04/Kali-linux-1072x660.png",
-          "accessibilityText": "Dialogflow across platforms"
-        },
+        //   "rawUrl": "https://www.inabaweb.com/wp-content/uploads/2023/04/Kali-linux-1072x660.png",
+        //   "accessibilityText": "Dialogflow across platforms"
+        // },
         {
           "type": "info",
           "title": "Dialogflow",
-          "subtitle": "Build natural and rich conversational experiences",
+          "subtitle": "Puedes preguntarme por alguna categoria de la lista o dar click en alguna que necesites",
           "actionLink": "https://cloud.google.com/dialogflow/docs"
         },
         {
@@ -247,6 +254,14 @@ function  getMixed(agent){
             {
               "text": "opción",
               "link": "https://cloud.google.com/dialogflow/case-studies"
+            },
+            {
+              "text": "Opcion 1",
+              "link": "https://cloud.google.com/dialogflow/case-studies"
+            },
+            {
+              "text": "Docs",
+              "link": "https://cloud.google.com/dialogflow/docs"
             }
           ]
         }

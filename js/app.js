@@ -120,19 +120,24 @@
 
 
 // Eventos Javascript
+// En este evento me aparece un mensaje al inicio similar al Default Welcome Intent
 // .........................................................................................
-window.addEventListener('dfMessengerLoaded',function(event){
-  console.log("chatbot cargado e inicializado" + event)
 
-const dfMessenger = document.querySelector('df-messenger');
-dfMessenger.renderCustomText('Custom text');
+// window.addEventListener('dfMessengerLoaded',function(event){
+//   console.log("chatbot cargado e inicializado" + event)
 
-dfMessenger = document.querySelector('df-messenger');
-dfMessenger.showMinChat();
+// const dfMessenger = document.querySelector('df-messenger');
+// dfMessenger.renderCustomText('Renderizado de Custom text en dfMessenger');
 
-  dfMessenger.addEventListener('df-list-element-clicked', function(event){
-    console.log("df-list-element-clicked" + event)
-  })
+//   dfMessenger = document.querySelector('df-messenger');
+//   dfMessenger.showMinChat();
+
+//     dfMessenger.addEventListener('df-list-element-clicked', function(event){
+//       console.log("df-list-element-clicked" + event)
+//   })
   
 
-})
+// })
+
+const dfMessenger = document.querySelector('df-messenger');
+console.log(dfMessenger)

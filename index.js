@@ -1,5 +1,4 @@
 const express = require("express");
-import { dfMessenger } from "./js/app/";
 const app = express();
 const dfff = require('dialogflow-fulfillment');
 const {Card, Suggestion} = require('dialogflow-fulfillment');
@@ -24,7 +23,7 @@ app.post('/', express.json(), (req,res)=>{
       getMixed(agent)
       setTimeout(() => {
         console.log("SetTimeout()")
-        console.log(dfMessenger)
+          console.log(dfMessenger)
         
       }, 3000);
     }
@@ -66,8 +65,6 @@ app.post('/', express.json(), (req,res)=>{
                   ]
                 ]
               
-
-
           }
 
         agent.add(new dfff.Payload(agent.UNSPECIFIED, payloadData, {sendAsMessage: true, rawPayload: true}))

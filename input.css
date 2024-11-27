@@ -117,21 +117,21 @@ Variable de CSS 	Propiedad afectada
 */
 df-messenger {
   --df-messenger-bot-message: #581a3a;                          /*El color de fondo de la burbuja para los mensajes del agente */
-  --df-messenger-button-titlebar-color: #b3b2b2;                /*El color del botón flotante y de la barra de título del cuadro de chat*/
+  --df-messenger-button-titlebar-color: hsl(0, 0%, 100%);       /*El color del botón flotante y de la barra de título del cuadro de chat*/
   --df-messenger-chat-background-color: #40694e;                /*El color de fondo del cuadro de chat*/
   --df-messenger-font-color: #ffffff;                           /*El color de fuente para los mensajes*/
-  --df-messenger-send-icon: #387956;                            /*El color del ícono de envío en la casilla de entrada de texto*/
-  --df-messenger-user-message: #303842;                         /*El color de fondo de la burbuja para los mensajes del usuario*/
-  --df-messenger-input-box-color: rgb(173, 218, 255);           /*El color de fondo de la casilla de entrada de texto*/
-  --df-messenger-button-titlebar-font-color: #ffffff;           /*El color de fuente del título en la barra de título*/
-  --df-messenger-input-font-color: #ee0808;                     /*El color de fuente para la casilla de entrada de texto*/
+  --df-messenger-send-icon: #1d402e;                            /*El color del ícono de envío en la casilla de entrada de texto*/
+  --df-messenger-user-message: #172641;                         /*El color de fondo de la burbuja para los mensajes del usuario*/
+  --df-messenger-input-box-color: rgb(228, 236, 242);           /*El color de fondo de la casilla de entrada de texto*/
+  --df-messenger-button-titlebar-font-color: #387956;           /*El color de fuente del título en la barra de título*/
+  --df-messenger-input-font-color: #343434;                     /*El color de fuente para la casilla de entrada de texto*/
   --df-messenger-input-placeholder-font-color: #090530;         /*El color de fuente para el texto del marcador de posición en la casilla de entrada de texto*/
-  --df-messenger-minimized-chat-close-icon-color: #e66b19;      /*El color del ícono de cierre en la vista del chat cerrado*/
+  --df-messenger-minimized-chat-close-icon-color: #ffffff;      /*El color del ícono de cierre en la vista del chat cerrado*/
 
  }
   body{
   height:100vh;
-  background-color: rgb(43, 42, 42);
+  background-color: rgb(249, 236, 162);
 }  
 
  #particles-js {
@@ -141,3 +141,28 @@ df-messenger {
   z-index:-1;   
     /* outline: 1px solid red; */
 } 
+
+.container-name{
+  height: 100vh;
+  width: 100wh;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  
+}
+.name{
+  font-size: 7rem;
+  color:#5C8D03;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  border-radius: 3rem;
+  border-color:#090530;
+  
+
+}
+.arrow{
+   
+   
+}

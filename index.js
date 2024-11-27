@@ -1,13 +1,17 @@
+
+//Importaciones
 const express = require("express");
 const app = express();
 const dfff = require('dialogflow-fulfillment');
 const {Card, Suggestion} = require('dialogflow-fulfillment');
 
 
+// const dfMessenger = require('./js/app')
+// console.log(dfMessenger)
 
-
+//Levanta un servidor
 app.get("/",(req,res)=>{
-    res.send("Servidor Vivo")
+    res.send("Running server...")
 });
 
 app.post('/', express.json(), (req,res)=>{
@@ -19,13 +23,9 @@ app.post('/', express.json(), (req,res)=>{
 
     function welcome(agent) {
       agent.add(`Hola soy Esmeralda!!`);
-      agent.add('Puedes preguntarme por alguna categoria de la lista o dar click en alguna que necesites')
-      getMixed(agent)
-      setTimeout(() => {
-        console.log("SetTimeout()")
-          console.log(dfMessenger)
-        
-      }, 3000);
+      agent.add('Puedes preguntarme por alguna categoria de la lista o dar click en alguna que necesite')
+      getList(agent)
+ 
     }
    
     function fallback(agent) {
@@ -34,9 +34,11 @@ app.post('/', express.json(), (req,res)=>{
     }
 
     function demo(agent){
-        agent.add(`Sending response from Webhook server ohh `);     
+        agent.add(`funcion demo `);     
     }
-
+    function getFaqs(agent){
+      agent.add(`Intent Faqs`);     
+  }
     function answerF(agent){
       agent.add("Soy la funcion answer")
     }
@@ -47,24 +49,21 @@ app.post('/', express.json(), (req,res)=>{
 
     function  PayloadDemo(agent){
         var payloadData = {
-
-    
                 "richContent": [
                   [
                     {
                       "type": "info",
-                      "title": "Info item title",
+                      "title": "Es el boton del intent",
                       "subtitle": "Info item subtitle",
                       "image": {
                         "src": {
-                          "rawUrl": "https://example.com/images/logo.png"
+                          "rawUrl": 'https://google.com'
                         }
                       },
                       "actionLink": "https://example.com"
                     }
                   ]
-                ]
-              
+                ]         
           }
 
         agent.add(new dfff.Payload(agent.UNSPECIFIED, payloadData, {sendAsMessage: true, rawPayload: true}))
@@ -119,7 +118,7 @@ function languageHandler(agent) {
             "link": "https://example.com",
             "event": {
               "name": "",
-              "languageCode": "",
+              "languageCode": demo(agent),
               "parameters": {}
             }
           }
@@ -130,14 +129,15 @@ function languageHandler(agent) {
     agent.add(new dfff.Payload(agent.UNSPECIFIED, payloadDataButton, {sendAsMessage: true, rawPayload: true}))
 }
 
+
 function  getList(agent){
   var payloadDataList = {
     "richContent": [
       [
         {
           "type": "list",
-          "title": "List item 1 title",
-          "subtitle": "List item 1 subtitle",
+          "title": "1. Modos de titulación",
+          // "subtitle": "List item 1 subtitle",
           "event": {
             "name": "",
             "languageCode": "",
@@ -145,12 +145,42 @@ function  getList(agent){
           }
         },
         {
-          "type": "divider"
+          "type": "list",
+          "title": "2. FAQs",
+          // "subtitle": "List item 1 subtitle",
+          "event": {
+            "name": "",
+            "languageCode": "",
+            "parameters": {}
+          }
         },
         {
           "type": "list",
-          "title": "Solicitud 1",
-          "subtitle": "Recuerda...",
+          "title": "3. Tramites",
+          // "subtitle": "List item 1 subtitle",
+          "event": {
+            "name": "",
+            "languageCode": "",
+            "parameters": {}
+          }
+        },
+        {
+          "type": "list",
+          "title": "4. Fechas ",
+          // "subtitle": "List item 1 subtitle",
+          "event": {
+            "name": "",
+            "languageCode": "",
+            "parameters": {}
+          }
+        },
+        // {
+          // "type": "divider"
+        // },
+        {
+          "type": "list",
+          "title": "5. Documentación",
+          // "subtitle": "Recuerda...",
           "event": {
             "name": "",
             "languageCode": "",
@@ -283,6 +313,8 @@ function  getMixed(agent){
     intentMap.set("getChipIntent", getChip)
     intentMap.set("getMixedIntent", getMixed)
     intentMap.set('set-language', languageHandler);
+    intentMap.set('set-language', languageHandler);
+    intentMap.set('getFaqsIntent', getFaqs);
    
 
     agent.handleRequest(intentMap);
@@ -295,8 +327,8 @@ function  getMixed(agent){
 
 
 
-app.listen(3331,()=>{
-    console.log("Server Live in port 3331")
+app.listen(2109,()=>{
+    console.log("Server Live in port 2109")
 });
 
 

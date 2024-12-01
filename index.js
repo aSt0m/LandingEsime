@@ -21,7 +21,7 @@ app.post('/', express.json(), (req,res)=>{
     });
 
 //Funcion Welcome
-    function welcome(agent) {
+  function welcome(agent) {
       agent.add(`Soy Esmeralda, tu asistente virtual de titulación.
 
 Puedes preguntarme directamente tu duda pero te presento las consultas más frecuentes de otros usuarios, es posible que te puedan ayudar.
@@ -32,11 +32,11 @@ Puedes preguntarme directamente tu duda pero te presento las consultas más frec
 4️⃣Asesoria y continuidad academica: Información sobre estudios de posgrado.
 5️⃣Recurso digitales y material de apoyo: Recursos (videos, articulos, guias de redacción, etc)`);
      
-    }
+  }
 //Función Fallback intent
     function fallback(agent) {
-      agent.add(`I didn't understand`);
-      agent.add(`I'm sorry, can you try again?`);
+      agent.add(`¿Podrías repetirlo, por favor?`);
+      agent.add(`.`);
     }
 
 //Función demo

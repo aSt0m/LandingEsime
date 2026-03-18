@@ -324,3 +324,18 @@ app.listen(2109,()=>{
 
 
 
+/*
+//Ocultar arrow con al teclear en el recuadro de chat
+// Seleccionamos el elemento del mensaje (el disparador)
+const botMessage = document.querySelector('dfTitlebar'); // Asegúrate de que esta clase coincida con la estructura de tu HTML
+
+// Seleccionamos la flecha que queremos ocultar
+const arrowImage = document.querySelector('.arrow');
+
+// Añadimos el evento de clic
+botMessage.addEventListener('click', function() {
+  if (arrowImage) {
+    arrowImage.style.display = 'none'; // Esto oculta la imagen por completo
+  }
+});
+*/

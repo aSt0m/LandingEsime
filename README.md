@@ -25,5 +25,5 @@ Pendiente...
 ### Pasos
 1. **Clonar y entrar:**
    ```bash
-   git clone [https://github.com/tu-usuario/proyecto-titulacion.git](https://github.com/tu-usuario/proyecto-titulacion.git)
-   cd proyecto-titulacion
+   git clone [https://github.com/aSt0m/LandingEsime.git](https://github.com/aSt0m/LandingEsime.git)
+   cd LandingEsime

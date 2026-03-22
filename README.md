@@ -27,10 +27,9 @@ Pendiente...
 
 2. **npm install** 
 
-```bash
-   npm install
+```bash npm install
 
-2. **Variables de Entorno:** 
+3. **Variables de Entorno:** 
 
 
 PORT=3000

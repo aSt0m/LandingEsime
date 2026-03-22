@@ -22,3 +22,16 @@ Pendiente...
    ```bash
    git clone [https://github.com/aSt0m/LandingEsime.git](https://github.com/aSt0m/LandingEsime.git)
    cd LandingEsime
+
+
+
+2. **npm install** 
+
+```bash
+   npm install
+
+2. **Variables de Entorno:** 
+
+
+PORT=3000
+DIALOGFLOW_PROJECT_ID=tu-id-de-proyecto

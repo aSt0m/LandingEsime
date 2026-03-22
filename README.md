@@ -4,3 +4,9 @@
 
 it's a repository where being embedded a bot
 
+# 🎓 Bot de Titulación (Dialogflow + Node.js)
+
+Este es el backend de cumplimiento (fulfillment) para el asistente virtual del Departamento de Titulación, construido con Node.js y desplegado para interactuar con Dialogflow CX/ES.
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
+![Dialogflow](https://img.shields.io/badge/Dialogflow-FF6F00?style=flat&logo=dialogflow&logoColor=white)

@@ -30,7 +30,7 @@ Pendiente...
 
 
    ```bash
-   npm install [npm install](https://github.com/aSt0m/LandingEsime.git)
+   npm install 
   
 
 3. **Variables de Entorno:** 

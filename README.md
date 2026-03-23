@@ -28,8 +28,10 @@ Pendiente...
 2. **npm install** 
 
 
-npm install
 
+   ```bash
+   npm install [npm install](https://github.com/aSt0m/LandingEsime.git)
+  
 
 3. **Variables de Entorno:** 
 

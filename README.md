@@ -27,7 +27,9 @@ Pendiente...
 
 2. **npm install** 
 
-```bash npm install
+
+npm install
+
 
 3. **Variables de Entorno:** 
 

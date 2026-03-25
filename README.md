@@ -8,7 +8,7 @@ Este es el backend de cumplimiento (fulfillment) para el asistente virtual del D
 
 ## Diagrama de arquitectura 
 
-Pendiente...
+* **Pendiente...**
 
 ## 🛠️ Configuración Local
 
@@ -26,8 +26,6 @@ Pendiente...
 
 
 2. **npm install** 
-
-
 
    ```bash
    npm install 
